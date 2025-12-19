@@ -3,6 +3,7 @@ using namespace std;
 int main() {
   int nbrePlaces = 10;
   int choix; 
+  do {
   cout << "************ Evaluation 2 ************" << endl << endl; 
   cout << "1 - Entrée dans le parking\n"; 
   cout << "2 - Nombre de places disponibles\n"; 
@@ -22,5 +23,6 @@ int main() {
     case 4:
       cout << "Vous quittez le menu" << endl;
   return 0;
-  }
+  } 
+  } while (choix!=4);
 }
