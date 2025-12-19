@@ -8,5 +8,19 @@ int main() {
   cout << "2 - Nombre de places disponibles\n"; 
   cout << "3 - Sortie du parking\n"; 
   cout << "4 - Quitter\n"; 
+  cin >> choix;
+  switch (choix) {
+    case 1:
+      cout << "Vous choisissez l'entrée dans la parking" << endl;  
+      break;
+    case 2:
+      cout << "Vous souhaitez connaitre le nombre de places disponibles" << endl;
+      break;
+    case 3:
+      cout << "Vous sortez du parking" << endl;
+      break;
+    case 4:
+      cout << "Vous quittez le menu" << endl;
   return 0;
+  }
 }
