@@ -13,18 +13,29 @@ int main() {
     cin >> choix;
     switch (choix) {
     case 1:
-      nbrePlaces = nbrePlaces - 1;
-      cout << "\n";
-      cout << "Vous entrez dans le parking\n";
+      if (nbrePlaces > 0) {
+        nbrePlaces = nbrePlaces - 1;
+        cout << "\n";
+        cout << "Vous entrez dans le parking\n";
+      }
+      if (nbrePlaces <= 0) {
+        cout << "Il n'y a plus de places \n";
+      }
       break;
     case 2:
       cout << "\n";
       cout << "Il reste " << nbrePlaces << " places\n";
       break;
     case 3:
-      nbrePlaces = nbrePlaces+1;
-      cout << "\n";
-      cout << "Vous sortez du parking\n";
+      if (nbrePlaces < 10) {
+        nbrePlaces = nbrePlaces + 1;
+        cout << "\n";
+        cout << "Vous sortez du parking.\n";
+      }
+      if (nbrePlaces >= 10) {
+        cout << "\n";
+        cout << "Il n'est plus possible de sortir du parking (parking vide).\n";
+      }
       break;
     case 4:
       cout << "Au revoir !" << endl;
